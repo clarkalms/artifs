@@ -3,12 +3,22 @@ body {
     min-height: 100vh;
     flex-direction: column;
   }
-
   main {
     flex: 1 0 auto;
   }
+ 
+  h6 {
+    margin: 30px 0;
+  }
+  .gif {
+    width: 250px;
+    margin: 0;
+  }
   #buttons-view {
     margin-top: 15px;
+  }
+  .gif-btn {
+    margin: 10px;
   }
 .page-footer {
     width: 100%;
