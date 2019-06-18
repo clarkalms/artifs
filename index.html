@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art-ifs</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">ArT-iFs</a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div class="col l3 s12">
+                <div class="row">
+                    <form>
+                        <div class="input-field col l12 s12 center">
+                            <i class="material-icons prefix">brush</i>
+                            <textarea id="gif-search" class="materialize-textarea"></textarea>
+                            <label for="icon_prefix2">Search an artist...</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col l12 s12 center">
+                        <select class="browser-default" id="rating-select">
+                            <option value="" disabled selected>Choose rating</option>
+                            <option value="G">G</option>
+                            <option value="PG">PG</option>
+                            <option value="PG-13">PG-13</option>
+                            <option value="R">R</option>
+                        </select>
+                        <label>Filter results by rating</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col l12 s12 center">
+                        <select class="browser-default" id="limit-select">
+                            <option value="" disabled selected>Choose limit</option>
+                            <option value="1">1</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                        </select>
+                        <label>Limit the number of results</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col l12 s12 center">
+                        <button class="btn waves-effect waves-light center" id="search-btn" type="submit" name="action">Search
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="col l12 s12" id="buttons-view">
+
+                </div>
+            </div>
+            <div class="col l9 s12" id="gifs-view">
+
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="footer-copyright center">
+            <div class="container">
+                Made By: Clark Alms © 2019 Copyright
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
